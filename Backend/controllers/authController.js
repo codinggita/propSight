@@ -135,7 +135,8 @@ const forgotPassword = async (req, res) => {
   await user.save();
 
   // Create reset url
-  const resetUrl = `${process.env.FRONTEND_URL}/reset-password/${resetToken}`;
+  const frontendUrl = process.env.FRONTEND_PRODUCTION_URL || process.env.FRONTEND_URL;
+  const resetUrl = `${frontendUrl}/reset-password/${resetToken}`;
 
   const message = `You are receiving this email because you (or someone else) has requested the reset of a password. Please make a PUT request to: \n\n ${resetUrl}`;
 
@@ -199,12 +200,13 @@ const googleAuth = passport.authenticate('google', { scope: ['profile', 'email']
 // @route   GET /api/auth/google/callback
 // @access  Public
 const googleCallback = (req, res, next) => {
+  const frontendUrl = process.env.FRONTEND_PRODUCTION_URL || process.env.FRONTEND_URL;
   passport.authenticate('google', { session: false }, (err, user, info) => {
     if (err) return next(err);
-    if (!user) return res.redirect(`${process.env.FRONTEND_URL}/login?error=auth_failed`);
+    if (!user) return res.redirect(`${frontendUrl}/login?error=auth_failed`);
     
     generateToken(res, user._id);
-    res.redirect(`${process.env.FRONTEND_URL}/dashboard`);
+    res.redirect(`${frontendUrl}/dashboard`);
   })(req, res, next);
 };
 
