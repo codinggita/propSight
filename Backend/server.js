@@ -22,8 +22,22 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
 
+const allowedOrigins = [
+  process.env.FRONTEND_URL,
+  process.env.FRONTEND_PRODUCTION_URL,
+  process.env.PRODUCTION_URL,
+].filter(Boolean);
+
 app.use(cors({
-  origin: process.env.FRONTEND_URL,
+  origin: function (origin, callback) {
+    // Allow requests with no origin (mobile apps, curl, etc.)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true,
 }));
 
