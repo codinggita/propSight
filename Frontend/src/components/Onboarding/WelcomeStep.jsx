@@ -12,7 +12,7 @@ const WelcomeStep = ({ onStart }) => {
           <span className="material-symbols-outlined text-primary text-4xl">rocket_launch</span>
         </div>
         <h3 className="text-white font-bold mb-2 uppercase">Ready to audit?</h3>
-        <p className="text-slate-500 text-sm mb-8 uppercase font-bold">We cross-verify listings across 14+ signals.</p>
+        <p className="text-slate-500 text-sm mb-8 uppercase font-bold">We analyse commute & neighbourhood data across 14+ signals.</p>
         <button onClick={onStart} className="w-full h-14 bg-primary text-black font-bold rounded-lg flex items-center justify-center gap-2 hover:opacity-90 active:scale-[0.98] transition-all uppercase tracking-widest">
           Start Onboarding
         </button>

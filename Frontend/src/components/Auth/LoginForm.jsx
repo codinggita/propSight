@@ -40,16 +40,12 @@ const LoginForm = () => {
         </div>
       )}
 
-      <div className="grid grid-cols-2 gap-4 mb-8">
+      <div className="grid grid-cols-1 gap-4 mb-8">
         <button 
           onClick={handleGoogleLogin}
           className="flex items-center justify-center gap-3 bg-surface-container-highest hover:bg-surface-variant transition-colors border border-white/5 py-3 rounded-lg text-on-surface"
         >
           <span className="font-label-caps">Google</span>
-        </button>
-        <button className="flex items-center justify-center gap-3 bg-surface-container-highest hover:bg-surface-variant transition-colors border border-white/5 py-3 rounded-lg text-on-surface">
-          <span className="material-symbols-outlined text-[20px]">phone_iphone</span>
-          <span className="font-label-caps">Phone</span>
         </button>
       </div>
 

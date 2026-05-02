@@ -27,8 +27,8 @@ const Signup = () => {
               <span className="text-[#46f1c5]">intelligence platform.</span>
             </h1>
             <div className="space-y-3 mb-10">
-              <TrustPill icon="search" text="2.4M Listings Scanned" />
               <TrustPill icon="location_city" text="847 Localities Mapped" />
+              <TrustPill icon="directions_car" text="Real-Time Commute Audits" />
               <TrustPill icon="verified_user" text="14 Verification Signals" />
             </div>
           </div>

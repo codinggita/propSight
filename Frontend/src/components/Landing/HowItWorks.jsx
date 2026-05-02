@@ -10,14 +10,14 @@ const HowItWorks = () => {
           {/* Step 1 */}
           <div className="flex-1 text-center group">
             <div className="w-16 h-16 rounded-full bg-background border-2 border-primary-container flex items-center justify-center mx-auto mb-6 text-primary-container font-bold text-xl relative z-10 group-hover:bg-primary-container group-hover:text-background transition-all">1</div>
-            <h4 className="font-headline-lg text-lg mb-2">Paste URL</h4>
-            <p className="text-on-surface-variant text-sm px-4">Copy the listing link from any major property portal.</p>
+            <h4 className="font-headline-lg text-lg mb-2">Select Location</h4>
+            <p className="text-on-surface-variant text-sm px-4">Enter the property address or drop a pin on the map.</p>
           </div>
           {/* Step 2 */}
           <div className="flex-1 text-center group">
             <div className="w-16 h-16 rounded-full bg-background border-2 border-primary-container flex items-center justify-center mx-auto mb-6 text-primary-container font-bold text-xl relative z-10 group-hover:bg-primary-container group-hover:text-background transition-all">2</div>
             <h4 className="font-headline-lg text-lg mb-2">Cross-verify</h4>
-            <p className="text-on-surface-variant text-sm px-4">Our AI scans RERA, satellite logs, and local govt records.</p>
+            <p className="text-on-surface-variant text-sm px-4">Our AI analyses live traffic data and local neighbourhood records.</p>
           </div>
           {/* Step 3 */}
           <div className="flex-1 text-center group">

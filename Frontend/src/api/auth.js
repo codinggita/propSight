@@ -38,7 +38,3 @@ export const getProfile = async () => {
   return response.data;
 };
 
-export const mobileLogin = async (phone, otp) => {
-  const response = await api.post('/mobile-login', { phone, otp });
-  return response.data;
-};

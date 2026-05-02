@@ -35,14 +35,13 @@ const SignupForm = () => {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
-    phone: '',
     password: '',
     profileType: 'Homebuyer'
   });
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const { fullName, email, phone, password, profileType } = formData;
+  const { fullName, email, password, profileType } = formData;
 
   const onChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -93,13 +92,12 @@ const SignupForm = () => {
         </div>
       )}
 
-      <div className="grid grid-cols-2 gap-4 mb-6">
+      <div className="grid grid-cols-1 gap-4 mb-6">
         <SocialButton 
           icon="https://lh3.googleusercontent.com/aida-public/AB6AXuBgSq6fyU25K83LE9FD2CpM2PGDeeZmlMZvY3zBliNNcv-k84BtLvFKgew5jWJvkCb9VMTJnuB2aScAJpqBKOFd-RvGyv6mpy-SdZ8zX3Vd_2Bo0A_cxNe-Iiu9oRB_hYmvfe874qRpHvYAlsKX769vbqHeTwRZrDW51wbVdqJ3oYq120SEsha0GcT3z_WF03yyA8bZpqjaIngz7HbWJsL2r_iNwZzU526i-lHu4bD-l0mWTHu1_Gdx16uxFFYhE4oTmhvh45qzwkA" 
           text="Google" 
           onClick={handleGoogleLogin}
         />
-        <SocialButton icon="📱" text="Phone" isEmoji />
       </div>
       <div className="relative flex items-center gap-4 mb-6">
         <div className="h-px bg-white/10 flex-1"></div>
@@ -117,19 +115,7 @@ const SignupForm = () => {
         </div>
         <InputField icon="person" placeholder="Full Name" name="fullName" value={fullName} onChange={onChange} />
         <InputField icon="mail" placeholder="Email address" type="email" name="email" value={email} onChange={onChange} />
-        <div className="relative flex items-center bg-white/5 border border-white/10 rounded-lg group focus-within:border-[#46f1c5] transition-all">
-          <div className="pl-3 pr-2 border-r border-white/10">
-            <span className="text-xs font-bold text-slate-400 font-mono">+91</span>
-          </div>
-          <input 
-            className="w-full bg-transparent border-none rounded-lg px-4 py-3 text-sm text-white focus:ring-0 outline-none placeholder:text-slate-500 font-bold" 
-            placeholder="Phone number" 
-            type="tel" 
-            name="phone"
-            value={phone}
-            onChange={onChange}
-          />
-        </div>
+
         <div className="space-y-3">
           <div className="relative bg-white/5 border border-white/10 rounded-lg group focus-within:border-[#46f1c5] transition-all">
             <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">lock</span>
