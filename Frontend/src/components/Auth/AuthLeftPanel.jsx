@@ -21,12 +21,12 @@ const AuthLeftPanel = () => {
         </h2>
         <div className="flex flex-col gap-3 items-start">
           <div className="bg-surface-container-high border border-white/5 px-4 py-2 rounded-full flex items-center gap-3">
-            <span className="material-symbols-outlined text-primary text-[18px]">search</span>
-            <span className="font-data-mono text-[13px] uppercase">2.4M Listings Scanned</span>
-          </div>
-          <div className="bg-surface-container-high border border-white/5 px-4 py-2 rounded-full flex items-center gap-3">
             <span className="material-symbols-outlined text-primary text-[18px]">domain</span>
             <span className="font-data-mono text-[13px] uppercase">847 Localities Mapped</span>
+          </div>
+          <div className="bg-surface-container-high border border-white/5 px-4 py-2 rounded-full flex items-center gap-3">
+            <span className="material-symbols-outlined text-primary text-[18px]">directions_car</span>
+            <span className="font-data-mono text-[13px] uppercase">Real-Time Commute Audits</span>
           </div>
           <div className="bg-surface-container-high border border-white/5 px-4 py-2 rounded-full flex items-center gap-3">
             <span className="material-symbols-outlined text-primary text-[18px]">check_circle</span>

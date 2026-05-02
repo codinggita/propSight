@@ -13,14 +13,11 @@ const HeroSection = () => {
           Don't buy a home until you've seen the <span className="text-primary-container">real data.</span>
         </h1>
         <p className="font-body-md text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto mb-10">
-          PropSight 360 cross-verifies listings, exposes fake broker clickbait, and reveals hidden neighbourhood flaws before you commit.
+          PropSight 360 analyses your daily commute and reveals hidden neighbourhood flaws before you commit.
         </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center mb-20">
           <Link to="/signup" className="bg-primary-container text-on-primary font-bold px-8 py-4 rounded-xl flex items-center justify-center gap-2 text-lg hover:scale-[1.02] transition-transform">
             Analyse a Property Free <span className="material-symbols-outlined">arrow_forward</span>
-          </Link>
-          <Link to="/sample-report" className="glass-panel text-on-background px-8 py-4 rounded-xl font-bold border border-white/10 hover:bg-white/5 transition-colors flex items-center justify-center">
-            View Sample Report
           </Link>
         </div>
         {/* Dashboard Mockup */}

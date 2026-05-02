@@ -27,7 +27,7 @@ const MarketPulse = () => {
       <div className="space-y-2">
         <StatRow label="Median Price" value="₹1.42 Cr" />
         <StatRow label="YoY Change" value="+18.2%" color="text-primary" />
-        <StatRow label="Avg Fake Rate" value="22.4%" color="text-error" />
+        <StatRow label="Avg Commute Delay" value="3.4x" color="text-error" />
       </div>
     </div>
   )

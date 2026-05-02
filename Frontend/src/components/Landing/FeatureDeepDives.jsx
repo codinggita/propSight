@@ -4,26 +4,7 @@ const FeatureDeepDives = () => {
   return (
     <section className="py-32 px-6">
       <div className="max-w-7xl mx-auto space-y-40">
-        {/* Feature 1 */}
-        <div className="flex flex-col md:flex-row items-center gap-16">
-          <div className="flex-1 order-2 md:order-1">
-            <span className="text-primary-container font-data-mono text-sm tracking-widest block mb-4 uppercase">Validation Engine</span>
-            <h3 className="font-headline-lg text-4xl mb-6">Listing Authenticity Audit</h3>
-            <p className="text-on-surface-variant text-lg mb-8 leading-relaxed">
-              We use historical image matching to detect if the "Sample Flat" photo has been used by 15 different projects. We cross-verify the RERA number against current construction progress captured via weekly satellite imagery.
-            </p>
-            <div className="flex items-center gap-4 p-4 glass-panel rounded-xl border-l-4 border-primary-container">
-              <span className="material-symbols-outlined text-primary-container">verified_user</span>
-              <span className="font-bold text-sm">Eliminated 42,000+ scam listings in the last quarter.</span>
-            </div>
-          </div>
-          <div className="flex-1 order-1 md:order-2">
-            <div className="relative glass-panel p-4 rounded-3xl inner-highlight overflow-hidden max-w-sm mx-auto shadow-2xl">
-              <img alt="Mobile App Interface" className="rounded-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7ib8ACeo_TyDMhf65Ih6e1DdvGeTWZ5x207uIq9VG7wbH6RXtC90h3mq1GYkuMNXDbt2AFKKd8lx6EMTv4vISB4DDhLStXgmM1WNjDZI77uFZ-ylX6-k59VQS7o02hFwQoOxo1df3YoZP85CkJgeWsm2JysuGOAN1NTC-lj0g1ouGX7EcqQ1T6qUb7HYyNfYPekRhBrVck_dBx7A5VRzzMW1h4y9OV2-69kvScpK4dXoaGqCW5EdN6xNgGgwyNW1by6PnxYrtiKc" />
-            </div>
-          </div>
-        </div>
-        {/* Feature 2 */}
+        {/* Feature 1 (Neighbourhood Intelligence) */}
         <div className="flex flex-col md:flex-row items-center gap-16">
           <div className="flex-1">
             <div className="relative glass-panel p-4 rounded-3xl inner-highlight overflow-hidden shadow-2xl">

@@ -22,7 +22,6 @@ function App() {
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/neighborhood" element={<NeighborhoodIntelligence />} />
       <Route path="/audit-report" element={<AuditReport />} />
-      <Route path="/sample-report" element={<AuditReport isStandalone={true} />} />
       <Route path="/commute-check" element={<CommuteCheck />} />
       <Route path="/reset-password/:token" element={<ResetPassword />} />
     </Routes>
